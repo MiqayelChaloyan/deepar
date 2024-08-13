@@ -1,14 +1,13 @@
 import './App.css'
 
-export default function App() {
+import Iframe from "./components/deepar";
+
+const urlBows = 'https://wearifyai.github.io/ARTryOn/?effect=bows';
+
+const App = () => {
   return (
-    <iframe
-      src="https://wearifyai.github.io/ARTryOn/?effect=bows"
-      title="DeepAR Try On"
-      allow="camera *; microphone *"
-      className='ar-screen'
-      frameborder="0" 
-      scrolling="no"
-    ></iframe>
-  );
-}
+    <Iframe src={urlBows} />
+  )
+};
+
+export default App;
